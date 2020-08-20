@@ -9,7 +9,7 @@ api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 
 user = api.me()
 
-search = 'javascript' or 'python' or '100DaysOfCode' or '@sarangpidadi07' or 'CodeNewbie'
+search = '100DaysOfCode', 'CodeNewbie'
 nrTweets = 100
 
 for tweet in tweepy.Cursor(api.search, search).items(nrTweets):
